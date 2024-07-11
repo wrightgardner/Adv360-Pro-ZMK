@@ -38,11 +38,11 @@
 
         default_layer {
             bindings = <
-&kp EQUAL      &kp N1     &kp N2     &kp N3    &kp N4     &kp N5  &tog 1                                                             &mo 3       &kp N6  &kp N7  &kp N8     &kp N9            &kp N0         &kp MINUS
-&kp TAB        &kp Q      &kp W      &kp E     &kp R      &kp T   &none                                                              &none       &kp Y   &kp U   &kp I      &kp O             &kp P          &kp BSLH
-&hm LCTRL ESC  &kp A      &kp S      &kp D     &kp F      &kp G   &none     &kp LCTRL  &kp LEFT_GUI      &kp LEFT_GUI   &kp RCTRL    &caps_word  &kp H   &kp J   &kp K      &kp L             &kp LEFT_GUI   &kp SQT
-&kp LSHFT      &kp Z      &kp X      &kp C     &kp V      &kp B                        &kp HOME          &kp PG_UP                               &kp N   &kp M   &kp COMMA  &kp DOT           &kp FSLH       &kp RSHFT
-&mo 2          &kp GRAVE  &kp MINUS  &kp LEFT  &kp RIGHT          &kp BSPC  &lt 1 TAB  &kp LEFT_ALT      &kp RIGHT_ALT  &lt 2 ENTER  &kp SPACE           &kp UP  &kp DOWN   &kp SINGLE_QUOTE  &kp BACKSLASH  &mo 2
+&kp EQUAL      &kp N1     &kp N2     &kp N3  &kp N4        &kp N5  &tog 1                                                             &mo 3       &kp N6  &kp N7        &kp N8     &kp N9            &kp N0         &kp MINUS
+&kp TAB        &kp Q      &kp W      &kp E   &kp R         &kp T   &none                                                              &none       &kp Y   &kp U         &kp I      &kp O             &kp P          &kp BSLH
+&mt LCTRL ESC  &kp A      &kp S      &kp D   &kp F         &kp G   &none     &kp LCTRL  &kp LEFT_GUI      &kp LEFT_GUI   &kp RCTRL    &caps_word  &kp H   &kp J         &kp K      &kp L             &kp SEMICOLON  &mt RCTRL SQT
+&kp LSHFT      &kp Z      &kp X      &kp C   &kp V         &kp B                        &kp HOME          &kp PG_UP                               &kp N   &kp M         &kp COMMA  &kp DOT           &kp FSLH       &kp RSHFT
+&mo 2          &kp GRAVE  &kp MINUS  &none   &kp LEFT_GUI          &kp BSPC  &lt 1 TAB  &kp LEFT_ALT      &kp RIGHT_ALT  &lt 2 ENTER  &kp SPACE           &kp LEFT_ALT  &none      &kp SINGLE_QUOTE  &kp BACKSLASH  &mo 2
             >;
         };
 
@@ -68,11 +68,11 @@
 
         layer_mod {
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none     &none       &none       &none      &none  &none
-&none  &none         &trans        &trans        &none         &trans        &bootloader                                            &bootloader             &none     &none       &trans      &trans     &none  &none
-&none  &none         &trans        &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &kp LEFT  &kp DOWN    &kp UP      &kp RIGHT  &none  &none
-&none  &none         &none         &trans        &macro_ver    &none                             &none      &none                                           &trans    &none       &none       &none      &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                   &bl BL_INC  &bl BL_DEC  &none      &none  &none
+&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none   &none       &none       &none   &none  &none
+&none  &none         &trans        &trans        &none         &trans        &bootloader                                            &bootloader             &none   &none       &trans      &trans  &none  &none
+&none  &none         &trans        &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none   &none       &none       &none   &none  &none
+&none  &none         &none         &trans        &macro_ver    &none                             &none      &none                                           &trans  &none       &none       &none   &none  &none
+&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                 &bl BL_INC  &bl BL_DEC  &none   &none  &none
             >;
         };
     };
