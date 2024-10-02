@@ -80,7 +80,7 @@
 &kp TAB    &kp EXCL          &kp AT             &kp HASH              &kp DOLLAR             &kp PERCENT    &none                                                    &none   &kp SLASH  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp BSLH
 &kp ESC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PAGE_UP    &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp STAR   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp SQT
 &kp LSHFT  &kp CARET         &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PAGE_DOWN                       &kp HOME      &kp PG_UP                     &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp RSHFT
-&mo 2      &kp GRAVE         &kp CAPS           &kp LEFT              &kp RIGHT                             &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp N0             &kp UP        &kp DOWN      &kp DOT       &kp RBKT   &mo 2
+&mo 2      &kp GRAVE         &kp CAPS           &trans                &trans                                &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp N0             &trans        &trans        &kp DOT       &kp RBKT   &mo 2
             >;
         };
 
