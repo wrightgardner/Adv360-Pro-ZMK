@@ -29,6 +29,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-while-undecided;
+            hold-trigger-key-positions = <47 58>;
         };
 
         hml: homerow_mods_left {
