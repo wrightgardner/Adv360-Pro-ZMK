@@ -67,21 +67,21 @@
 
         default_layer {
             bindings = <
-&kp EQUAL      &kp N1               &kp N2       &kp N3             &kp N4             &kp N5   &tog 1                                                        &mo 3      &kp N6   &kp N7              &kp N8                   &kp N9            &kp N0                  &kp MINUS
-&kp TAB        &kp Q                &kp W        &kp E              &kp R              &kp T    &none                                                         &none      &kp Y    &kp U               &kp I                    &kp O             &kp P                   &kp BSLH
-&hm LCTRL ESC  &hml LEFT_CONTROL A  &hml LALT S  &hml LEFT_GUI D    &hml LEFT_SHIFT F  &lt 2 G  &none     &hm LCMD ESC  &kp LALT      &kp LCTRL  &caps_word   &none      &lt 2 H  &hmr RIGHT_SHIFT J  &hmr LEFT_GUI K          &hmr RIGHT_ALT L  &hmr LCTRL SEMICOLON    &kp SQT
-&kp LSHFT      &hml LSHFT Z         &kp X        &kp C              &kp V              &kp B                            &kp HOME      &kp PG_UP                          &kp N    &kp M               &kp COMMA                &kp DOT           &hmr RIGHT_SHIFT SLASH  &kp RSHFT
-&mo 2          &kp ESCAPE           &kp GRAVE    &kp LS(LA(LCTRL))  &kp LEFT_GUI                &kp BSPC  &lt 1 TAB     &kp END       &kp PG_DN  &lt 2 ENTER  &kp SPACE           &kp LEFT_ALT        &hm LS(LA(LCTRL)) MINUS  &kp SQT           &kp BACKSLASH           &mo 2
+&kp EQUAL      &kp N1               &kp N2       &kp N3               &kp N4             &kp N5   &tog 1                                                        &mo 3      &kp N6   &kp N7              &kp N8                   &kp N9            &kp N0                  &kp MINUS
+&kp TAB        &kp Q                &kp W        &kp E                &kp R              &kp T    &none                                                         &none      &kp Y    &kp U               &kp I                    &kp O             &kp P                   &kp BSLH
+&hm LCTRL ESC  &hml LEFT_CONTROL A  &hml LALT S  &hml LEFT_GUI D      &hml LEFT_SHIFT F  &lt 2 G  &kp ESC   &hm LCMD ESC  &kp LALT      &kp LCTRL  &caps_word   &none      &lt 2 H  &hmr RIGHT_SHIFT J  &hmr LEFT_GUI K          &hmr RIGHT_ALT L  &hmr LCTRL SEMICOLON    &kp SQT
+&kp LSHFT      &hml LSHFT Z         &kp X        &hm LS(LA(LCTRL)) C  &kp V              &kp B                            &kp HOME      &kp PG_UP                          &kp N    &kp M               &hm LS(LA(LCTRL)) COMMA  &kp DOT           &hmr RIGHT_SHIFT SLASH  &kp RSHFT
+&mo 2          &kp ESCAPE           &kp GRAVE    &kp LS(LA(LCTRL))    &kp LEFT_GUI                &kp BSPC  &lt 1 TAB     &kp END       &kp PG_DN  &lt 2 ENTER  &kp SPACE           &kp LEFT_ALT        &kp MINUS                &kp SQT           &kp BACKSLASH           &mo 2
             >;
         };
 
         layer_keypad {
             bindings = <
 &kp EQUAL  &kp N1            &kp N2             &kp N3                &kp N4                 &kp N5         &trans                                                   &mo 3   &none      &kp KP_NUM    &kp EQUAL     &kp SLASH     &kp STAR   &kp MINUS
-&kp TAB    &kp EXCL          &kp AT             &kp HASH              &kp DOLLAR             &kp PERCENT    &none                                                    &none   &kp SLASH  &kp N7        &kp N8        &kp N9        &kp MINUS  &kp BSLH
+&kp TAB    &kp EXCL          &kp AT             &kp HASH              &kp DOLLAR             &kp PERCENT    &none                                                    &none   &kp N0     &kp N7        &kp N8        &kp N9        &kp MINUS  &kp BSLH
 &kp ESC    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp PAGE_UP    &none     &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &none   &kp STAR   &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS   &kp SQT
 &kp LSHFT  &kp CARET         &kp AMPERSAND      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PAGE_DOWN                       &kp HOME      &kp PG_UP                     &kp EQUAL  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH  &kp RSHFT
-&mo 2      &kp GRAVE         &kp CAPS           &trans                &trans                                &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp N0             &trans        &trans        &kp DOT       &kp RBKT   &mo 2
+&mo 2      &kp GRAVE         &trans             &trans                &trans                                &kp BSPC  &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp N0             &trans        &trans        &kp DOT       &kp RBKT   &mo 2
             >;
         };
 
