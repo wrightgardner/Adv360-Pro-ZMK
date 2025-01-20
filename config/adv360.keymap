@@ -64,7 +64,7 @@
         };
 
     nav {
-      display-name = "Navigation"
+      display-name = "Navigation";
       bindings = <
 &trans  &trans                &trans                &trans             &trans                    &trans                   &trans                                      &trans  &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &kp ESCAPE            &trans                &trans             &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(KP_NUMBER_5))  &trans                                      &trans  &kp LS(LG(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
@@ -75,7 +75,7 @@
         };
 
     mouse {
-      display-name = "Mouse"
+      display-name = "Mouse";
       bindings = <
 &trans      &trans                &trans                &trans        &trans           &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans   &trans
 &bl BL_TOG  &kp F1                &kp F2                &kp F3        &kp F4           &kp F5      &trans                                      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
