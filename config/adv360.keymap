@@ -29,7 +29,7 @@
       compatible = "zmk,keymap";
 
       default_layer {
-        display-name = "Base"
+        display-name = "Base";
         bindings = <
 &trans  &trans            &trans          &trans              &trans                   &trans  &trans                                                       &mo 5        &trans  &trans               &trans               &trans          &trans            &trans
 &trans  &kp Q             &kp W           &kp E               &kp R                    &kp T   &none                                                        &none        &kp Y   &kp U                &kp I                &kp O           &kp P             &trans
@@ -40,7 +40,7 @@
     };
 
     sym {
-      display-name = "Symbols"
+      display-name = "Symbols";
       bindings = <
 &trans  &trans     &trans     &trans          &trans           &trans       &trans                                      &trans  &trans     &trans     &trans         &trans                &trans                 &trans
 &trans  &kp EXCL   &kp AT     &kp POUND       &kp DOLLAR       &kp PERCENT  &trans                                      &trans  &kp CARET  &kp AMPS   &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
@@ -51,7 +51,7 @@
     };
 
     num {
-      display-name = "Numpad"
+      display-name = "Numpad";
       bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans     &trans                                       &trans  &trans    &trans     &trans  &trans  &trans     &trans
 &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5     &trans                                       &trans  &kp N6    &kp N7     &kp N8  &kp N9  &kp N0     &trans
@@ -62,7 +62,7 @@
     };
 
     nav {
-      display-name = "Navigation"
+      display-name = "Navigation";
       bindings = <
 &trans  &trans                &trans                &trans             &trans                    &trans                   &trans                                      &trans  &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &kp ESCAPE            &trans                &trans             &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(KP_NUMBER_5))  &trans                                      &trans  &kp LS(LG(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
@@ -73,7 +73,7 @@
     };
 
     mouse {
-      display-name = "Mouse"
+      display-name = "Mouse";
       bindings = <
 &trans      &trans                &trans                &trans        &trans           &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans   &trans
 &bl BL_TOG  &kp F1                &kp F2                &kp F3        &kp F4           &kp F5      &trans                                      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
@@ -84,7 +84,7 @@
     };
 
     mod {
-      display-name = "Modifiers"
+      display-name = "Modifiers";
       bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
 &none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
