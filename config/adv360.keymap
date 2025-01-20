@@ -1,12 +1,13 @@
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 900  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 #include <dt-bindings/zmk/pointing.h>
-
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 / {
@@ -59,8 +60,8 @@
             bindings = <
 &trans  &trans     &trans     &trans          &trans           &trans       &trans                                      &trans  &trans     &trans     &trans         &trans                &trans                 &trans
 &trans  &kp EXCL   &kp AT     &kp POUND       &kp DOLLAR       &kp PERCENT  &trans                                      &trans  &kp CARET  &kp AMPS   &kp STAR       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
-&trans  &kp TILDE  &kp UNDER  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE     &trans  &trans  &trans      &trans  &trans  &trans  &trans     &trans     &trans         &trans                &kp COLON              &trans
-&trans  &kp GRAVE  &kp MINUS  &kp LBKT        &kp RBKT         &trans                       &trans      &trans                  &trans     &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN      &kp BSLH               &trans
+&trans  &kp TILDE  &kp UNDER  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE     &trans  &trans  &trans      &trans  &trans  &trans  &kp BSLH   &trans     &trans         &trans                &kp COLON              &trans
+&trans  &kp GRAVE  &kp MINUS  &kp LBKT        &kp RBKT         &trans                       &trans      &trans                  &trans     &kp EQUAL  &kp LESS_THAN  &kp GREATER_THAN      &kp SEMI               &trans
 &trans  &trans     &trans     &trans          &trans                        &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans         &trans                &trans                 &trans
             >;
         };
@@ -81,7 +82,7 @@
             bindings = <
 &trans  &trans                &trans                &trans             &trans                    &trans                   &trans                                      &trans  &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &kp ESCAPE            &trans                &trans             &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(KP_NUMBER_5))  &trans                                      &trans  &kp LS(LG(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
-&trans  &trans                &trans                &trans             &trans                    &caps_word               &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI   &trans
+&trans  &trans                &trans                &trans             &trans                    &caps_word               &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &trans     &trans
 &trans  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP           &kp C_MUTE                               &trans      &trans                  &kp HOME       &kp PG_DN  &kp PG_UP  &kp END    &kp INS    &trans
 &trans  &trans                &trans                &trans             &trans                                             &trans  &trans  &trans      &trans  &trans  &trans                 &trans     &trans     &trans     &trans     &trans
             >;
