@@ -11,24 +11,27 @@
         #include "macros.dtsi"
       #include "version.dtsi"
       #ifndef VERSION_MACRO
-      macro_ver: macro_ver {
-        compatible = "zmk,behavior-macro";
-        label = "macro_version";
-        #binding-cells = <0>;
-        bindings = <&kp RET>;
-      };
-      #endif
 
-      hm: homerow_mods {
-          compatible = "zmk,behavior-hold-tap";
-          label = "HOMEROW_MODS";
-          #binding-cells = <2>;
-          tapping-term-ms = <200>;
-          quick_tap_ms = <175>;
-          flavor = "tap-preferred";
-          bindings = <&kp>, <&kp>;
-          hold-while-undecided;
-      };
+        macro_ver: macro_ver {
+            compatible = "zmk,behavior-macro";
+            label = "macro_version";
+            #binding-cells = <0>;
+            bindings = <&kp RET>;
+        };
+
+        #endif
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+
+            hold-while-undecided;
+        };
     };
 
     macros {
@@ -70,9 +73,9 @@
             >;
         };
 
-    nav {
-      display-name = "Navigation";
-      bindings = <
+        nav {
+            display-name = "Navigation";
+            bindings = <
 &trans  &trans                &trans                &trans             &trans                    &trans                   &trans                                      &trans  &trans         &trans     &trans     &trans     &trans     &trans
 &trans  &kp ESCAPE            &trans                &trans             &kp LS(LC(LG(NUMBER_4)))  &kp LS(LG(KP_NUMBER_5))  &trans                                      &trans  &kp LS(LG(Z))  &kp LG(V)  &kp LG(C)  &kp LG(X)  &kp LG(Z)  &trans
 &trans  &trans                &trans                &trans             &trans                    &caps_word               &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT       &kp DOWN   &kp UP     &kp RIGHT  &kp SEMI   &trans
@@ -81,25 +84,25 @@
             >;
         };
 
-    mouse {
-      display-name = "Mouse";
-      bindings = <
-&trans      &trans                &trans                &trans        &trans           &trans      &trans                                      &trans  &trans  &trans  &trans  &trans  &trans   &trans
-&bl BL_TOG  &kp F1                &kp F2                &kp F3        &kp F4           &kp F5      &trans                                      &trans  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans      &trans                &trans                &trans        &trans           &kp ESC     &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp F11  &trans
-&trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                  &trans      &trans                  &trans  &trans  &trans  &trans  &kp F12  &trans
-&trans      &trans                &trans                &trans        &trans                       &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
+        mouse {
+            display-name = "Mouse";
+            bindings = <
+&trans      &trans                &trans                &trans        &trans           &trans      &trans                                         &trans     &trans          &trans          &trans          &trans           &trans   &trans
+&bl BL_TOG  &kp F1                &kp F2                &kp F3        &kp F4           &kp F5      &trans                                         &trans     &kp F6          &kp F7          &kp F8          &kp F9           &kp F10  &trans
+&trans      &trans                &trans                &trans        &trans           &kp ESC     &trans  &trans  &trans      &trans  &trans     &trans     &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_UP    &mmv MOVE_RIGHT  &kp F11  &trans
+&trans      &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_MUTE                  &trans      &trans                        &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp F12  &trans
+&trans      &trans                &trans                &trans        &trans                       &trans  &trans  &trans      &trans  &mkp RCLK  &mkp LCLK                  &trans          &trans          &trans           &trans   &trans
             >;
         };
 
         mod {
-            display-name = "Mod";
+            display-name = "Modifiers";
             bindings = <
-&none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
-&none  &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
+&none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                                                  &trans                  &none  &none       &none       &none  &none  &none
+&none           &none         &none         &none         &none         &none         &bootloader                                            &bootloader             &none  &none       &none       &none  &none  &none
+&studio_unlock  &none         &none         &none         &none         &none         &none        &none  &none      &bt BT_CLR  &none       &rgb_ug RGB_MEFS_CMD 5  &none  &none       &none       &none  &none  &none
+&none           &none         &none         &none         &macro_ver    &none                             &none      &none                                           &none  &none       &none       &none  &none  &none
+&none           &none         &none         &none         &none                       &none        &none  &none      &none       &bl BL_TOG  &rgb_ug RGB_TOG                &bl BL_INC  &bl BL_DEC  &none  &none  &none
             >;
         };
     };
