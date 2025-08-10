@@ -21,6 +21,7 @@
             bindings = <&kp>, <&kp>;
 
             hold-while-undecided;
+            require-prior-idle-ms = <150>;
         };
     };
 
