@@ -53,11 +53,11 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2                    &kp F3                &kp F4          &kp F5                 &kp F6          &tog 1                                          &mo 3   &kp F7         &kp F8        &kp F9      &kp F10          &kp F11        &kp F12
-&trans  &kp ESCAPE                &kp LG(LEFT_BRACKET)  &mmv MOVE_UP    &kp LG(RIGHT_BRACKET)  &msc SCRL_DOWN  &none                                           &none   &kp PAGE_UP    &kp HOME      &kp UP      &kp END          &kp BACKSPACE  &trans
-&trans  &kp LG(LS(LC(NUMBER_4)))  &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT        &msc SCRL_UP    &none       &trans  &trans      &trans  &trans  &none   &kp PAGE_DOWN  &kp LEFT      &kp DOWN    &kp RIGHT        &trans         &trans
-&trans  &trans                    &trans                &mkp RCLK       &mkp LCLK              &trans                              &trans      &trans                  &trans         &kp C_VOL_DN  &kp C_MUTE  &kp C_VOLUME_UP  &trans         &trans
-&trans  &trans                    &trans                &trans          &trans                                 &kp DELETE  &trans  &trans      &trans  &trans  &trans                 &trans        &trans      &trans           &trans         &trans
+&kp F1  &kp F2                    &kp F3                &kp F4          &kp F5                 &kp F6          &tog 1                                          &mo 3   &kp F7    &kp F8         &kp F9           &kp F10     &kp F11        &kp F12
+&trans  &kp ESCAPE                &kp LG(LEFT_BRACKET)  &mmv MOVE_UP    &kp LG(RIGHT_BRACKET)  &msc SCRL_DOWN  &none                                           &none   &kp HOME  &kp PAGE_DOWN  &kp PAGE_UP      &kp END     &kp BACKSPACE  &trans
+&trans  &kp LG(LS(LC(NUMBER_4)))  &mmv MOVE_LEFT        &mmv MOVE_DOWN  &mmv MOVE_RIGHT        &msc SCRL_UP    &none       &trans  &trans      &trans  &trans  &none   &kp LEFT  &kp DOWN       &kp UP_ARROW     &kp RIGHT   &trans         &trans
+&trans  &trans                    &trans                &mkp RCLK       &mkp LCLK              &trans                              &trans      &trans                  &trans    &kp C_VOL_DN   &kp C_VOLUME_UP  &kp C_MUTE  &trans         &trans
+&trans  &trans                    &trans                &trans          &trans                                 &kp DELETE  &trans  &trans      &trans  &trans  &trans            &trans         &trans           &trans      &trans         &trans
             >;
         };
 
